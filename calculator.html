@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <script src = "..\calculator.js"></script>
+    <style>
+
+        body {
+            background-color: lightblue;
+            font-size : 25px;
+        }
+
+        h1 {
+            color: white;
+            margin: 5px 5px 0px 0px;
+        }
+
+        input {
+            color : lightblue;
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            font-size : 20px;
+            margin: 5px 5px 5px 5px;
+        }
+
+        #res {
+            text-align: center;
+            color: lightblue;
+            width: 300px;
+        }</style>
+</head>
+
+<body>
+
+    <center>
+
+    <h1>Big Calculator</h1>
+
+    <div class = "main">
+  
+        <br>
+        <input id = "res" type = "text">
+
+        <br>
+        <br>
+
+        <input type = "button" value = "1" onclick = "addText(1)">
+        <input type = "button" value = "2" onclick = "addText(2)">
+        <input type = "button" value = "3" onclick = "addText(3)">
+
+        <br>
+
+        <input type = "button" value = "4" onclick = "addText(4)">
+        <input type = "button" value = "5" onclick = "addText(5)">
+        <input type = "button" value = "6" onclick = "addText(6)">
+
+        <br>
+
+        <input type = "button" value = "7" onclick = "addText(7)">
+        <input type = "button" value = "8" onclick = "addText(8)">
+        <input type = "button" value = "9" onclick = "addText(9)">
+
+        <br>
+
+        <input type = "button" value = "0" onclick = "addText(0)">
+
+        <br>
+        <br>
+
+        <input type = "button" value = "+" onclick = "addText('+')">
+        <input type = "button" value = "-" onclick = "addText('-')">
+        <input type = "button" value = "*" onclick = "addText('*')">
+        <input type = "button" value = "/" onclick = "addText('/')">
+        <input type = "button" value = "(" onclick = "addText('(')">
+        <input type = "button" value = ")" onclick = "addText(')')">
+
+        <br>
+        <br>
+
+        <input id = "equal" type = "button" value = "=" onclick = "equals()">
+        <input id = "delete" type = "button" value = "AC" onclick = "deleteText()">
+
+    </div>
+
+    </center>
+
+</body>
+
+</html>
